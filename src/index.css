@@ -2,3 +2,21 @@
 @import "../node_modules/flowbite/src/themes/default.css";
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
+
+@layer utilities {
+    .-z-10 {
+        z-index: -10;
+    }
+}
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@layer utilities {
+    .animate-gradient {
+        background-size: 200% 200%;
+        animation: gradientBG 6s ease infinite;
+    }
+}

@@ -20,7 +20,7 @@
     </div>
   </section>
 <header class="flex justify-end">
-  <nav class="md:text-2xl p-2.5 md:p-4">
+  <nav class="md:text-2xl p-2.5 md:p-4 fixed top-0 bg-black/75">
     <a href="#home" class="px-3 hover:text-red-600">Home</a>
     <a href="#about" class="px-3 hover:text-red-600">About</a>
     <a href="#projects" class="px-3 hover:text-red-600">Projects</a>
@@ -30,7 +30,7 @@
 <main class="container mx-auto">
 
 
-  <section id="about">
+  <section id="about" class="min-h-screen w-auto">
     <h2 class="text-3xl text-center underline decoration-[#e63946] py-4">About Me</h2>
     <p class="container mx-auto max-w-4xl">I’m a full-stack web developer with a strong foundation in HTML, CSS, JavaScript, and
       responsive design. Currently enrolled in an intensive coding bootcamp, I’m focused on building user-centered web
@@ -118,8 +118,9 @@
       </div>
     </div>
   </section>
+  <div id="projects" class="h-screen w-auto ">
   <h2 class="text-center text-3xl mt-3 underline decoration-[#e63946] pb-10">Projects</h2>
-  <section id="projects" class="text-center flex justify-center gap-3 container mx-auto max-w-4xl flex-wrap md:flex-nowrap">
+  <section  class="text-center flex justify-center gap-3 container mx-auto max-w-4xl flex-wrap md:flex-nowrap">
     <img src="/public/task.png" alt="Screenshot of Task Tracker App" class="max-w-1/2">
     <div>
      <h3 class="text-3xl">Task Tracker</h3>
@@ -129,13 +130,15 @@
     </div>
 
   </section>
+  </div>
+  <div id="contact" class="h-screen w-auto">
   <h2 class="text-center text-3xl mt-3 underline decoration-[#e63946]">Contact</h2>
-  <section id="contact" class="flex justify-center flex-wrap gap-3 my-5">
+  <section class=" justify-center flex-wrap gap-3 my-5">
     <form class="flex flex-col justify-center gap-2 px-10">
       <label for="name">Name</label>
-      <input id="name" type="text" class="border-1 border-white md:min-w-80 ">
+      <input id="name" type="text" class="border-1 border-white bg-black md:min-w-80 ">
       <label for="email">Email</label>
-      <input id="email" type="email" class="border-1 border-white  md:min-w-80">
+      <input id="email" type="email" class="border-1 border-white bg-black md:min-w-80">
       <label for="message">Message</label>
       <textarea id="message" class="min-h-40 md:min-w-80 bg-black"></textarea>
       <button type="submit" class="border-1 border-white max-w-20">Submit</button>
@@ -143,6 +146,7 @@
     <p class="max-w-50 mt-10">Have a question, opportunity, or just want to say hello? Feel free to reach out using the form below, I’d love to hear from you!</p>
 
   </section>
+  </div>
 </main>
   <footer class="bg-zinc-800 min-h-10 max-w-screen flex justify-center gap-10 md:gap-20 py-3 container">
     <a href="https://www.linkedin.com/in/dylankeck/">

@@ -12,16 +12,15 @@
 <canvas id="starfield" class="fixed top-0 left-0 w-full h-full -z-10"></canvas>
 
 
-
 <section id="home" class=" mx-0 relative h-screen w-auto flex items-center justify-center text-center overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#e63946] animate-gradient z-0 opacity-30 blur-lg"></div>
-    <div class="z-10">
-      <h1 class="text-5xl">Hello, I'm <span class="text-[#e63946]">Dylan Keck</span>.</h1>
-      <h2 class="text-3xl">I am a Full-Stack Developer</h2>
-    </div>
-  </section>
+  <div class="absolute inset-0 bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#e63946] animate-gradient z-0 opacity-30 blur-lg"></div>
+  <div class="z-10">
+    <h1 class="text-5xl">Hello, I'm <span class="text-[#e63946]">Dylan Keck</span>.</h1>
+    <h2 class="text-3xl">I am a Fullstack Developer</h2>
+  </div>
+</section>
 <header class="flex justify-end">
-  <nav class="md:text-2xl p-2.5 md:p-4 fixed top-0 bg-black/75 md:bg-transparent">
+  <nav class="md:text-2xl p-2.5 md:p-4 fixed mb-2 top-0 bg-gray-800/75 w-full text-center ">
     <a href="#home" class="px-3 hover:text-red-600">Home</a>
     <a href="#about" class="px-3 hover:text-red-600">About</a>
     <a href="#projects" class="px-3 hover:text-red-600">Projects</a>
@@ -32,16 +31,16 @@
 
 
   <section id="about" class="min-h-screen w-auto">
-    <h2 class="text-3xl text-center underline decoration-[#e63946] py-4">About Me</h2>
-    <p class="container mx-auto max-w-4xl">I’m a full-stack web developer with a strong foundation in HTML, CSS, JavaScript, and
-      responsive design. Currently enrolled in an intensive coding bootcamp, I’m focused on building user-centered web
-      applications and developing scalable, maintainable code.
+    <h2 class="text-4xl text-center underline decoration-[#e63946] py-4">About Me</h2>
+    <p class="font-bold text-center mb-4">Fullstack developer focused on writing clean code, solving real problems, and constantly leveling up.</p>
 
-      With a background in fast-paced, team-oriented environments, I bring strong problem-solving skills, adaptability,
-      and attention to detail to every project. I'm passionate about creating tools that connect people and simplify
-      everyday tasks.</p>
+    <p class="container mx-auto max-w-4xl">I'm a fullstack web developer with a strong foundation in HTML, CSS, JavaScript, and React. Through an intensive coding bootcamp, I’ve built responsive, user-focused applications using technologies like Node.js, Express, PostgreSQL, and Tailwind CSS.
+
+      I bring a background in high-pressure, team-based environments where clear communication, adaptability, and problem-solving were essential. I’m driven by curiosity, continuous learning, and a passion for building tools that make people’s lives easier.
+
+      Whether working independently or in a collaborative team, I focus on writing clean, maintainable code and delivering polished user experiences. I'm excited to join a team where I can grow as a developer and contribute from day one.</p>
     <section class="py-8 px-4 bg-black text-white">
-      <h2 class="text-3xl text-center underline decoration-[#e63946] py-4">Tech Stack</h2>
+      <h2 class="text-2xl text-center font-bold py-4">Tech Stack</h2>
       <div class="max-w-5xl mx-auto space-y-8">
         <div>
           <h3 class="text-xl font-semibold mb-4 text-red-400">Frontend</h3>
@@ -147,55 +146,91 @@
 
       </div>
     </section>
+  </section>
+
+  <div id="projects" class="min-h-screen w-auto">
+    <h2 class="text-center text-4xl mt-3 underline decoration-[#e63946] pb-10">Projects</h2>
+    <section class="text-center flex justify-center gap-3  flex-wrap md:flex-nowrap">
+      <img src="/public/task.png" alt="Screenshot of Task Tracker App" class="max-w-5/9 border-white border-2">
+      <div>
+        <h3 class="text-3xl pb-2">Task Tracker</h3>
+        <p class="pb-3">A responsive web application that allows users to manage daily tasks with ease. Users can add new tasks with
+          associated priorities and due dates, mark tasks as complete, delete tasks, and filter the task list by
+          priority level or overdue status. Built with HTML, Tailwind CSS, and JavaScript, the app also features
+          localStorage support for persistent data between sessions. Designed with a minimalist layout and an intuitive
+          sidebar navigation menu that toggles via a hamburger icon for seamless user experience.</p>
+        <button type="button"
+                class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900 bg-black">
+          Live App
+        </button>
+        <button type="button"
+                class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900 bg-black">
+          Learn More
+        </button>
+      </div>
+
     </section>
 
-  <div id="projects" class="h-screen w-auto">
-  <h2 class="text-center text-3xl mt-3 underline decoration-[#e63946] pb-10">Projects</h2>
-  <section  class="text-center flex justify-center gap-3 container mx-auto max-w-4xl flex-wrap md:flex-nowrap">
-    <img src="/public/task.png" alt="Screenshot of Task Tracker App" class="max-w-1/2">
-    <div>
-     <h3 class="text-3xl">Task Tracker</h3>
-     <p>A responsive web application that allows users to manage daily tasks with ease. Users can add new tasks with associated priorities and due dates, mark tasks as complete, delete tasks, and filter the task list by priority level or overdue status. Built with HTML, Tailwind CSS, and JavaScript, the app also features localStorage support for persistent data between sessions. Designed with a minimalist layout and an intuitive sidebar navigation menu that toggles via a hamburger icon for seamless user experience.</p>
-      <button  type="button" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Live App</button>
-      <button  type="button" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Learn More</button>
-    </div>
-
-  </section>
   </div>
-  <div id="contact" class="h-screen w-auto">
-  <h2 class="text-center text-3xl mt-3 underline decoration-[#e63946]">Contact</h2>
-  <section class="flex justify-center flex-wrap gap-3 my-5">
-    <form class="flex flex-col justify-center gap-2 px-10">
-      <label for="name">Name</label>
-      <input id="name" type="text" class="border-1 border-white md:min-w-80 ">
-      <label for="email">Email</label>
-      <input id="email" type="email" class="border-1 border-white  md:min-w-80">
-      <label for="message">Message</label>
-      <textarea id="message" class="min-h-40 md:min-w-80 bg-black"></textarea>
-      <button type="submit" class="border-1 border-white max-w-20">Submit</button>
-    </form>
-    <p class="max-w-50 mt-10">Have a question, opportunity, or just want to say hello? Feel free to reach out using the form below, I’d love to hear from you!</p>
+  <div id="contact" class="max-h-screen w-auto">
+    <h2 class="text-center text-4xl mt-3 underline decoration-[#e63946]">Contact</h2>
+    <p class=" mt-10 mx-auto max-w-72 text-2xl">Let’s connect.
+      Whether it’s a job opportunity, project idea, or quick chat, feel free to reach out below.</p>
+    <section class="flex justify-center flex-wrap gap-3 my-5">
 
-  </section>
+      <form class="flex flex-col justify-center gap-2 px-10">
+        <label for="name" class="text-xl">Name</label>
+        <input id="name" type="text" class="border-1 border-white md:min-w-80 bg-black">
+        <label for="email" class="text-xl">Email</label>
+        <input id="email" type="email" class="border-1 border-white  md:min-w-100 bg-black">
+        <label for="message" class="text-xl">Message</label>
+        <textarea id="message" class="min-h-40 md:min-w-80 bg-black"></textarea>
+        <button type="submit" class="border-1 border-white max-w-20">Submit</button>
+      </form>
+
+
+    </section>
   </div>
 </main>
-  <footer class="bg-zinc-800 min-h-10 max-w-screen flex justify-center gap-10 md:gap-20 py-3 container">
+<footer class="bg-zinc-800 min-h-10 max-w-screen flex flex-col items-center  py-3 container">
+  <div class="flex justify-center gap-10 md:gap-20">
     <a href="https://www.linkedin.com/in/dylankeck/">
-      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0,0,256,256">
-        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M24,4h-18c-1.105,0 -2,0.895 -2,2v18c0,1.105 0.895,2 2,2h18c1.105,0 2,-0.895 2,-2v-18c0,-1.105 -0.895,-2 -2,-2zM10.954,22h-2.95v-9.492h2.95zM9.449,11.151c-0.951,0 -1.72,-0.771 -1.72,-1.72c0,-0.949 0.77,-1.719 1.72,-1.719c0.948,0 1.719,0.771 1.719,1.719c0,0.949 -0.771,1.72 -1.719,1.72zM22.004,22h-2.948v-4.616c0,-1.101 -0.02,-2.517 -1.533,-2.517c-1.535,0 -1.771,1.199 -1.771,2.437v4.696h-2.948v-9.492h2.83v1.297h0.04c0.394,-0.746 1.356,-1.533 2.791,-1.533c2.987,0 3.539,1.966 3.539,4.522z"></path></g></g>
-      </svg>
-    </a>
-      <a class="pt-1">
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">
-          <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M0,7v36h50v-36zM2,9h46v2.53125l-23,18.1875l-23,-18.1875zM2,14.09375l22.375,17.6875c0.36719,0.29297 0.88281,0.29297 1.25,0l22.375,-17.6875v26.90625h-46z"></path></g></g>
-        </svg>
-      </a>
-      <a href="https://github.com/DylanKeck" target="_blank" class="pt-1">
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">
-          <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M17.791,46.836c0.711,-0.306 1.209,-1.013 1.209,-1.836v-5.4c0,-0.197 0.016,-0.402 0.041,-0.61c-0.014,0.004 -0.027,0.007 -0.041,0.01c0,0 -3,0 -3.6,0c-1.5,0 -2.8,-0.6 -3.4,-1.8c-0.7,-1.3 -1,-3.5 -2.8,-4.7c-0.3,-0.2 -0.1,-0.5 0.5,-0.5c0.6,0.1 1.9,0.9 2.7,2c0.9,1.1 1.8,2 3.4,2c2.487,0 3.82,-0.125 4.622,-0.555c0.934,-1.389 2.227,-2.445 3.578,-2.445v-0.025c-5.668,-0.182 -9.289,-2.066 -10.975,-4.975c-3.665,0.042 -6.856,0.405 -8.677,0.707c-0.058,-0.327 -0.108,-0.656 -0.151,-0.987c1.797,-0.296 4.843,-0.647 8.345,-0.714c-0.112,-0.276 -0.209,-0.559 -0.291,-0.849c-3.511,-0.178 -6.541,-0.039 -8.187,0.097c-0.02,-0.332 -0.047,-0.663 -0.051,-0.999c1.649,-0.135 4.597,-0.27 8.018,-0.111c-0.079,-0.5 -0.13,-1.011 -0.13,-1.543c0,-1.7 0.6,-3.5 1.7,-5c-0.5,-1.7 -1.2,-5.3 0.2,-6.6c2.7,0 4.6,1.3 5.5,2.1c1.699,-0.701 3.599,-1.101 5.699,-1.101c2.1,0 4,0.4 5.6,1.1c0.9,-0.8 2.8,-2.1 5.5,-2.1c1.5,1.4 0.7,5 0.2,6.6c1.1,1.5 1.7,3.2 1.6,5c0,0.484 -0.045,0.951 -0.11,1.409c3.499,-0.172 6.527,-0.034 8.204,0.102c-0.002,0.337 -0.033,0.666 -0.051,0.999c-1.671,-0.138 -4.775,-0.28 -8.359,-0.089c-0.089,0.336 -0.197,0.663 -0.325,0.98c3.546,0.046 6.665,0.389 8.548,0.689c-0.043,0.332 -0.093,0.661 -0.151,0.987c-1.912,-0.306 -5.171,-0.664 -8.879,-0.682c-1.665,2.878 -5.22,4.755 -10.777,4.974v0.031c2.6,0 5,3.9 5,6.6v5.4c0,0.823 0.498,1.53 1.209,1.836c9.161,-3.032 15.791,-11.672 15.791,-21.836c0,-12.682 -10.317,-23 -23,-23c-12.683,0 -23,10.318 -23,23c0,10.164 6.63,18.804 15.791,21.836z"></path></g></g>
-        </svg>
-      </a>
-  </footer>
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0,0,256,256">
+      <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+         stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+         font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+        <g transform="scale(8.53333,8.53333)">
+          <path d="M24,4h-18c-1.105,0 -2,0.895 -2,2v18c0,1.105 0.895,2 2,2h18c1.105,0 2,-0.895 2,-2v-18c0,-1.105 -0.895,-2 -2,-2zM10.954,22h-2.95v-9.492h2.95zM9.449,11.151c-0.951,0 -1.72,-0.771 -1.72,-1.72c0,-0.949 0.77,-1.719 1.72,-1.719c0.948,0 1.719,0.771 1.719,1.719c0,0.949 -0.771,1.72 -1.719,1.72zM22.004,22h-2.948v-4.616c0,-1.101 -0.02,-2.517 -1.533,-2.517c-1.535,0 -1.771,1.199 -1.771,2.437v4.696h-2.948v-9.492h2.83v1.297h0.04c0.394,-0.746 1.356,-1.533 2.791,-1.533c2.987,0 3.539,1.966 3.539,4.522z"></path>
+        </g>
+      </g>
+    </svg>
+  </a>
+  <a class="pt-1">
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">
+      <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+         stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+         font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+        <g transform="scale(5.12,5.12)">
+          <path d="M0,7v36h50v-36zM2,9h46v2.53125l-23,18.1875l-23,-18.1875zM2,14.09375l22.375,17.6875c0.36719,0.29297 0.88281,0.29297 1.25,0l22.375,-17.6875v26.90625h-46z"></path>
+        </g>
+      </g>
+    </svg>
+  </a>
+  <a href="https://github.com/DylanKeck" target="_blank" class="pt-1">
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">
+      <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+         stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+         font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+        <g transform="scale(5.12,5.12)">
+          <path d="M17.791,46.836c0.711,-0.306 1.209,-1.013 1.209,-1.836v-5.4c0,-0.197 0.016,-0.402 0.041,-0.61c-0.014,0.004 -0.027,0.007 -0.041,0.01c0,0 -3,0 -3.6,0c-1.5,0 -2.8,-0.6 -3.4,-1.8c-0.7,-1.3 -1,-3.5 -2.8,-4.7c-0.3,-0.2 -0.1,-0.5 0.5,-0.5c0.6,0.1 1.9,0.9 2.7,2c0.9,1.1 1.8,2 3.4,2c2.487,0 3.82,-0.125 4.622,-0.555c0.934,-1.389 2.227,-2.445 3.578,-2.445v-0.025c-5.668,-0.182 -9.289,-2.066 -10.975,-4.975c-3.665,0.042 -6.856,0.405 -8.677,0.707c-0.058,-0.327 -0.108,-0.656 -0.151,-0.987c1.797,-0.296 4.843,-0.647 8.345,-0.714c-0.112,-0.276 -0.209,-0.559 -0.291,-0.849c-3.511,-0.178 -6.541,-0.039 -8.187,0.097c-0.02,-0.332 -0.047,-0.663 -0.051,-0.999c1.649,-0.135 4.597,-0.27 8.018,-0.111c-0.079,-0.5 -0.13,-1.011 -0.13,-1.543c0,-1.7 0.6,-3.5 1.7,-5c-0.5,-1.7 -1.2,-5.3 0.2,-6.6c2.7,0 4.6,1.3 5.5,2.1c1.699,-0.701 3.599,-1.101 5.699,-1.101c2.1,0 4,0.4 5.6,1.1c0.9,-0.8 2.8,-2.1 5.5,-2.1c1.5,1.4 0.7,5 0.2,6.6c1.1,1.5 1.7,3.2 1.6,5c0,0.484 -0.045,0.951 -0.11,1.409c3.499,-0.172 6.527,-0.034 8.204,0.102c-0.002,0.337 -0.033,0.666 -0.051,0.999c-1.671,-0.138 -4.775,-0.28 -8.359,-0.089c-0.089,0.336 -0.197,0.663 -0.325,0.98c3.546,0.046 6.665,0.389 8.548,0.689c-0.043,0.332 -0.093,0.661 -0.151,0.987c-1.912,-0.306 -5.171,-0.664 -8.879,-0.682c-1.665,2.878 -5.22,4.755 -10.777,4.974v0.031c2.6,0 5,3.9 5,6.6v5.4c0,0.823 0.498,1.53 1.209,1.836c9.161,-3.032 15.791,-11.672 15.791,-21.836c0,-12.682 -10.317,-23 -23,-23c-12.683,0 -23,10.318 -23,23c0,10.164 6.63,18.804 15.791,21.836z"></path>
+        </g>
+      </g>
+    </svg>
+  </a>
+  </div>
+  <p class="text-xs">© 2025 Dylan Keck. All rights reserved.</p>
+
+</footer>
 
 
 <script type="module" src="/src/main.js"></script>

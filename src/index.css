@@ -20,3 +20,9 @@
         animation: gradientBG 6s ease infinite;
     }
 }
+.tech {
+    background-color: gray;
+    border: 1px solid darkgray;
+    border-radius: 20em;
+    padding: .5em;
+}

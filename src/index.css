@@ -26,3 +26,11 @@
     border-radius: 20em;
     padding: .5em;
 }
+html {
+    scroll-behavior: smooth;
+}
+
+.website {
+    position: absolute;
+    left: -9999px;
+}

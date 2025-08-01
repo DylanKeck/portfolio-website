@@ -166,24 +166,23 @@
   <div id="projects" class="min-h-screen w-auto pt-15">
     <h2 class="text-center text-4xl mt-3 underline decoration-[#e63946] pb-10">Projects</h2>
     <section class="text-center flex flex-col justify-center gap-3  flex-wrap md:flex-nowrap">
-      <div class="flex flex-col md:flex-row gap-5 p-4 items-center">
-      <img src="/public/commonality.png" alt="Screenshot of Commonality App" class="max-w-5/9 border-white border-2">
+      <div class="flex flex-col md:flex-row gap-5 p-4 items-start">
+        <img src="/public/commonality.png" alt="Screenshot of Commonality App" class="w-full md:w-1/2 border-white border-2 rounded-lg self-start">
         <div class="w-full md:w-1/2">
         <h3 class="text-3xl pb-2 font-bold">Commonality</h3>
-        <p class="text-lg mb-6 italic">
-          Commonality is a full-stack social matching platform designed to help users connect through shared interests and activities.
+        <p class="mb-6 ">
+          Commonality is a full-stack social matching platform designed to help users connect through shared interests and activities.  Built using <strong>React</strong>, <strong>Tailwind CSS</strong>, <strong>Node.js</strong>, <strong>Express</strong>, and <strong>PostgreSQL</strong>, the app follows a modular <strong>MVC architecture</strong> with clear separation of concerns.
         </p>
-        <ul class="list-disc list-inside space-y-2 mb-6">
-          <li>Users create detailed profiles and get matched with individuals or groups based on shared interests.</li>
-          <li>Dynamic group creation and filtering based on interest, location, and preferences.</li>
-          <li>Real-time messaging between matched users or group members.</li>
-        </ul>
+
         <p class="mb-6">
-          Built using <strong>React</strong>, <strong>Tailwind CSS</strong>, <strong>Node.js</strong>, <strong>Express</strong>, and <strong>PostgreSQL</strong>, the app follows a modular <strong>MVC architecture</strong> with clear separation of concerns.
+
         </p>
         <div class="mb-6">
           <h3 class="font-semibold text-xl mb-2">Key Features:</h3>
           <ul class="list-disc list-inside space-y-1">
+            <li>Users create detailed profiles and get matched with individuals based on shared interests</li>
+            <li>Dynamic filtering based on interest, location, and preferences</li>
+            <li>Real-time messaging between matched users</li>
             <li>Secure user authentication and session handling</li>
             <li>RESTful API with Zod schema validation</li>
             <li>Responsive UI with dynamic filters and dropdowns</li>

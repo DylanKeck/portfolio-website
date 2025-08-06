@@ -238,13 +238,13 @@
       <form id="contact-form" class="flex flex-col justify-center gap-2 px-10">
         <input type="text" id="website" class="website" name="website" tabindex="-1" autocomplete="off"/>
         <label for="name" class="text-xl">Name</label>
-        <input id="name" type="text" class="border-1 border-white md:min-w-80 bg-black">
+        <input id="name" name="name" type="text" class="border-1 border-white md:min-w-80 bg-black">
         <p id="nameError" class="hidden text-red-500"></p>
         <label for="email" class="text-xl">Email</label>
-        <input id="email" type="email" class="border-1 border-white  md:min-w-100 bg-black">
+        <input id="email" type="email" name="email" class="border-1 border-white  md:min-w-100 bg-black">
         <p id="emailError" class="hidden text-red-500"></p>
         <label for="message" class="text-xl">Message</label>
-        <textarea id="message" class="min-h-40 md:min-w-80 bg-black"></textarea>
+        <textarea id="message" name="message" class="min-h-40 md:min-w-80 bg-black"></textarea>
         <p id="messageError" class="hidden text-red-500"></p>
         <div id="status" class="hidden"></div>
 

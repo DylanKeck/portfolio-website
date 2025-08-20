@@ -229,26 +229,38 @@
     </section>
 
   </div>
-  <div id="contact" class="min-h-screen w-auto pt-15">
+  <div id="contact" class="min-h-screen w-auto pt-20">
     <h2 class="text-center text-4xl mt-3 underline decoration-[#e63946]">Contact</h2>
-    <p class=" mt-10 mx-auto max-w-72 text-2xl">Let’s connect.
-      Whether it’s a job opportunity, project idea, or quick chat, feel free to reach out below.</p>
-    <div class="flex justify-center flex-wrap gap-3 my-5">
+    <p class="mt-10 mx-auto max-w-md text-xl text-center text-gray-300 leading-relaxed">Let's connect.
+      Whether it's a job opportunity, project idea, or quick chat, feel free to reach out below.</p>
+    <div class="flex justify-center my-10">
 
-      <form id="contact-form" class="flex flex-col justify-center gap-2 px-10">
+      <form id="contact-form" class="flex flex-col gap-6 px-8 py-8 bg-gray-900/50 backdrop-blur-sm rounded-xl border border-gray-800 shadow-2xl w-full max-w-lg">
         <input type="text" id="website" class="website" name="website" tabindex="-1" autocomplete="off"/>
-        <label for="name" class="text-xl">Name</label>
-        <input id="name" name="name" type="text" class="border-1 border-white md:min-w-80 bg-black">
-        <p id="nameError" class="hidden text-red-500"></p>
-        <label for="email" class="text-xl">Email</label>
-        <input id="email" type="email" name="email" class="border-1 border-white  md:min-w-100 bg-black">
-        <p id="emailError" class="hidden text-red-500"></p>
-        <label for="message" class="text-xl">Message</label>
-        <textarea id="message" name="message" class="min-h-40 md:min-w-80 bg-black"></textarea>
-        <p id="messageError" class="hidden text-red-500"></p>
+        
+        <div class="space-y-2">
+          <label for="name" class="text-lg font-medium text-gray-200">Name</label>
+          <input id="name" name="name" type="text" class="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200" placeholder="Your full name">
+          <p id="nameError" class="hidden text-red-400 text-sm mt-1"></p>
+        </div>
+
+        <div class="space-y-2">
+          <label for="email" class="text-lg font-medium text-gray-200">Email</label>
+          <input id="email" type="email" name="email" class="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200" placeholder="your.email@example.com">
+          <p id="emailError" class="hidden text-red-400 text-sm mt-1"></p>
+        </div>
+
+        <div class="space-y-2">
+          <label for="message" class="text-lg font-medium text-gray-200">Message</label>
+          <textarea id="message" name="message" class="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200 resize-none" rows="5" placeholder="Tell me about your project or opportunity..."></textarea>
+          <p id="messageError" class="hidden text-red-400 text-sm mt-1"></p>
+        </div>
+
         <div id="status" class="hidden"></div>
 
-        <button type="submit" class="border-1 border-white max-w-20 mb-2">Submit</button>
+        <button type="submit" class="w-full py-3 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-semibold rounded-lg transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-red-500/25">
+          Send Message
+        </button>
       </form>
 
 
@@ -289,7 +301,7 @@
         </g>
       </g>
     </svg>
-  </a>
+  .
   </div>
   <p class="text-xs">© 2025 Dylan Keck. All rights reserved.</p>
 

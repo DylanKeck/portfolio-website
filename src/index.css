@@ -34,6 +34,6 @@ html {
     position: absolute;
     left: -9999px;
 }
-html, body {
-    overflow-x: hidden;
-}
+/*html, body {*/
+/*    overflow-x: hidden;*/
+/*}*/

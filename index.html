@@ -267,87 +267,117 @@
         </div>
       </div>
 
-      <!-- Task Tracker Project -->
-      <div class="group bg-gray-900/50 border border-gray-800 rounded-2xl overflow-hidden hover:border-red-500/50 transition-all duration-300 shadow-xl hover:shadow-red-500/20">
-        <div class="flex flex-col lg:flex-row-reverse">
-          <div class="lg:w-1/2 relative overflow-hidden">
-            <div class="aspect-[16/10] relative bg-gradient-to-br from-gray-900 to-gray-800 p-1 rounded-lg">
-              <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-green-500/20 rounded-lg"></div>
-              <img src="/public/task.png" alt="Screenshot of Task Tracker App" class="w-full h-full object-cover rounded-lg shadow-2xl border border-gray-700/50 relative z-10">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent rounded-lg z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div class="absolute top-4 left-4 z-30 flex gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0">
-                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
-                <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
-              </div>
-            </div>
-          </div>
-          <div class="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
-            <div class="flex items-center gap-4 mb-4">
-              <h3 class="text-3xl lg:text-4xl font-bold text-white">Task Tracker</h3>
-              <span class="px-3 py-1 bg-blue-500/20 text-blue-400 text-sm font-medium rounded-full">Frontend</span>
-            </div>
-
-            <p class="text-gray-300 mb-6 text-lg leading-relaxed">
-              A clean, responsive task management application that helps users stay organized and productive with intuitive features and a minimalist design.
-            </p>
-
-            <div class="mb-8">
-              <h4 class="text-xl font-semibold text-white mb-4">Key Features</h4>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                <div class="flex items-start gap-3">
-                  <span class="text-red-400 mt-1">•</span>
-                  <span class="text-gray-300 text-sm">Priority-based tasks</span>
+      <!-- Job Tracker Project -->
+        <div class="group bg-gray-900/50 border border-gray-800 rounded-2xl overflow-hidden hover:border-red-500/50 transition-all duration-300 shadow-xl hover:shadow-red-500/20">
+            <div class="flex flex-col lg:flex-row-reverse">
+                <!-- Preview -->
+                <div class="lg:w-1/2 relative overflow-hidden">
+                    <div class="aspect-[16/10] relative bg-gradient-to-br from-gray-900 to-gray-800 p-1 rounded-lg">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-red-500/20 rounded-lg"></div>
+                        <img src="/public/jobtracker.png" alt="Screenshot of Job Application Tracker" class="w-full h-full object-cover rounded-lg shadow-2xl border border-gray-700/50 relative z-10">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent rounded-lg z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 left-4 z-30 flex gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0">
+                            <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                            <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                            <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex items-start gap-3">
-                  <span class="text-red-400 mt-1">•</span>
-                  <span class="text-gray-300 text-sm">Due date tracking</span>
-                </div>
-                <div class="flex items-start gap-3">
-                  <span class="text-red-400 mt-1">•</span>
-                  <span class="text-gray-300 text-sm">Smart filtering</span>
-                </div>
-                <div class="flex items-start gap-3">
-                  <span class="text-red-400 mt-1">•</span>
-                  <span class="text-gray-300 text-sm">Persistent storage</span>
-                </div>
-              </div>
-            </div>
 
-            <div class="mb-6">
-              <h4 class="text-lg font-semibold text-white mb-3">Technologies</h4>
-              <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-gray-800 text-gray-300 text-sm rounded-full">HTML5</span>
-                <span class="px-3 py-1 bg-gray-800 text-gray-300 text-sm rounded-full">Tailwind CSS</span>
-                <span class="px-3 py-1 bg-gray-800 text-gray-300 text-sm rounded-full">JavaScript</span>
-                <span class="px-3 py-1 bg-gray-800 text-gray-300 text-sm rounded-full">localStorage</span>
-              </div>
-            </div>
+                <!-- Content -->
+                <div class="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
+                    <div class="flex items-center gap-4 mb-4">
+                        <h3 class="text-3xl lg:text-4xl font-bold text-white">Job Tracker</h3>
+                        <span class="lg:px-3 py-1 bg-red-500/20 text-red-400 text-sm font-medium rounded-full">Full-Stack</span>
+                        <span class="lg:px-3 py-1 bg-blue-500/20 text-blue-300 text-sm font-medium rounded-full">AWS</span>
+                    </div>
 
-            <div class="flex gap-4">
-              <a href="https://github.com/DylanKeck/task-tracker"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 class="inline-flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg transition-colors duration-200 shadow-lg hover:shadow-red-500/25">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"/>
-                </svg>
-                View Code
-              </a>
-<!--              <a href="https://dylankeck.github.io/task-tracker/"-->
-<!--                 target="_blank"-->
-<!--                 rel="noopener noreferrer"-->
-<!--                 class="inline-flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg transition-colors duration-200 shadow-lg hover:shadow-red-500/25">-->
-<!--                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">-->
-<!--                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>-->
-<!--                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>-->
-<!--                </svg>-->
-<!--                Live Demo-->
-<!--              </a>-->
+                    <p class="text-gray-300 mb-6 text-lg leading-relaxed">
+                        Track every application from save → offer with clean UI, fast filters, and built-in reminders. Add role, company, salary range, location, status, notes, and links—then stay on top of follow-ups without the spreadsheet chaos.
+                    </p>
+
+                    <!-- Features -->
+                    <div class="mb-8">
+                        <h4 class="text-xl font-semibold text-white mb-4">Key Features</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div class="flex items-start gap-3">
+                                <span class="text-red-400 mt-1">•</span>
+                                <span class="text-gray-300 text-sm">Application pipeline: Saved → Applied → Interview → Offer → Rejected</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-red-400 mt-1">•</span>
+                                <span class="text-gray-300 text-sm">Reminder system with “done” toggle</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-red-400 mt-1">•</span>
+                                <span class="text-gray-300 text-sm">Status, priority & date filters + search</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-red-400 mt-1">•</span>
+                                <span class="text-gray-300 text-sm">Role, company, location, salary min/max & applied-on date</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-red-400 mt-1">•</span>
+                                <span class="text-gray-300 text-sm">Secure session auth & profile-scoped data</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="text-red-400 mt-1">•</span>
+                                <span class="text-gray-300 text-sm">REST API with server validation (Zod)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tech -->
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold text-white mb-3">Technologies</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-sm rounded-full">React</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-sm rounded-full">React Router v7</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-sm rounded-full">TypeScript</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-sm rounded-full">Tailwind CSS</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-sm rounded-full">Node.js / Express</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-sm rounded-full">PostgreSQL</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-sm rounded-full">Zod</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-sm rounded-full">Docker</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-sm rounded-full">Nginx</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-sm rounded-full">AWS EC2</span>
+                        </div>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="flex gap-4">
+                        <a
+                                href="https://github.com/DylanKeck/job-tracker"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg transition-colors duration-200 shadow-lg hover:shadow-red-500/25"
+                        >
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"/>
+                        </svg>
+                        View Code
+                        </a>
+
+                        <!-- Optional live demo -->
+                        <!--
+                        <a
+                          href="https://your-domain.dev"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white font-medium rounded-lg transition-colors duration-200"
+                        >
+                          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                          </svg>
+                          Live Demo
+                        </a>
+                        -->
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+
 
     </section>
   </div>
